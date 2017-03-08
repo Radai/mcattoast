@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "mCat Tracklist",
+	"version": "0.1",
+	"browser_action": {
+		"default_icon": "Monstercat_Logo.png"
+	},
+	"permissions": [
+		"notifications"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"http://live.monstercat.com/",
+				"https://www.twitch.tv/monstercat"
+			],
+			"js": ["jquery-3.1.1.min.js", "content.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"web_accessible_resources":["Monstercat_Logo.png"]
+}
