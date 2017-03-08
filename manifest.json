@@ -1,11 +1,14 @@
 {
 	"manifest_version": 2,
-	"name": "mCat Tracklist",
+	"name": "Monstercat FM Notify",
 	"version": "0.1",
+	"description": "Extension that shows Chrome notifications when the song changes on https://www.twitch.tv/monstercat and you have it open in a tab.",
 	"browser_action": {
 		"default_icon": "Monstercat_Logo.png",
-		"default_title": "Click to see what's playing on MonstercatFM!"
+		"default_title": "Click to see what's playing on Monstercat FM!"
 	},
+	"short_name":"MCFM Notify",
+	"icons":{"128":"Monstercat_Logo.png"},
 	"permissions": [
 		"notifications",
 		"activeTab",

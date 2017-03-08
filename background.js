@@ -1,4 +1,4 @@
-var toastdata;
+var toastdata = "";
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if(request.type === "shownotification"){
