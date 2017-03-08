@@ -3,10 +3,13 @@
 	"name": "mCat Tracklist",
 	"version": "0.1",
 	"browser_action": {
-		"default_icon": "Monstercat_Logo.png"
+		"default_icon": "Monstercat_Logo.png",
+		"default_title": "Click to see what's playing on MonstercatFM!"
 	},
 	"permissions": [
-		"notifications"
+		"notifications",
+		"activeTab",
+		"tabs"
 	],
 	"content_scripts": [
 		{
@@ -18,7 +21,8 @@
 		}
 	],
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": ["background.js"],
+		"persistent": false
 	},
 	"web_accessible_resources":["Monstercat_Logo.png"]
 }

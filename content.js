@@ -32,8 +32,9 @@
 								var options = {
 									type: "basic",
 									title: "Now Playing",
-									message: message,
-									contextMessage: "contextmessage",
+									// message: message,
+									message: title,
+									contextMessage: author,
 									// items: [{title: title, message: "by " + author}],
 									iconUrl: "Monstercat_Logo.png"
 								};
